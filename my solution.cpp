@@ -215,23 +215,7 @@ class SkillWillStudent: public AbstractStudent {
 
 int main()
 {
-    SkillWillSubject skillWillSubject("Web's", 7, "16.11.22");
     
-    SkillWillStudent skillWillStudent("Levan", "mermanishvili", 33, "CPP");
-    
-    skillWillStudent.studentInfo();
-    skillWillStudent.studentSkill('b', 7, 70);
-    
-    SkillWillLecturer skillWillLecturer("Lika", "Sikharulia", "PHP");
-    
-    skillWillLecturer.lecturerInfo();
-    
-    
-    skillWillLecturer.lecturerSkill("php", "Senior");
-    
-    skillWillLecturer.conduqtingLecturer(skillWillSubject);
-    
-    skillWillStudent.attendLecture(skillWillSubject);
     
     
 
