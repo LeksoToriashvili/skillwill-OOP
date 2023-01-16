@@ -178,6 +178,9 @@ class AbstractStudent {
             cout << " The student attends the lecture" << endl;
         }
         
+        void updateQuiz() {
+            
+        }
 };
 
 class SkillWillStudent: public AbstractStudent {
@@ -210,6 +213,12 @@ class SkillWillStudent: public AbstractStudent {
             cout << " " << FirstName << " " << LastName << " attended " << subject.getSubjectName() << " lecture" << endl;
         }
         
+        void updateQuiz(int newScore) {
+            QuizScore += newScore;
+            cout << " The final result of " << FirstName << " " << LastName << " quiz is : " << QuizScore << endl;
+            cout << endl;
+            
+        }
 };
 
 
@@ -221,6 +230,11 @@ int main()
 
     skillWillStudent.studentInfo();
     skillWillStudent.studentSkill('b', 7, 70);
+    skillWillStudent.updateQuiz(60);
+    skillWillStudent.updateQuiz(30);
+    skillWillStudent.updateQuiz(200);
+
+    
 
     SkillWillLecturer skillWillLecturer("Lika", "Sikharulia", "PHP");
 
